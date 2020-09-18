@@ -24,15 +24,18 @@
 
     }
     .link-box:hover {
-        animation-name: zoom;
-        animation-duration: 500ms;
-        animation-fill-mode: forwards;
+        transform: scale(1.03);
     }
-    @keyframes zoom {
-        100% {
-            transform: scale(1.03);
-        }
+    .outer-box {
+        height: 100%;
+        border-color: black;
+        border-width: 2px;
+        border-style: solid;
+        padding-left: 5%;
+        padding-top: 10%;
+
     }
+
     .image-size {
         width: 300px;
         height: 200px;
@@ -40,36 +43,51 @@
 
 </style>
 <body>
+    <div class="outer-box">
+        <a href="#">
 
-    <a href="#">
-
-        <div id="project-1" class="link-box">
-            <div>
-                <img class="image-size" src="mountain.jpeg" alt="Picture of a Mountain" style="border-radius: 5px;">
+            <div id="project-1" class="link-box">
+                <div>
+                    <img class="image-size" src="mountain.jpeg" alt="Picture of a Mountain" style="border-radius: 5px;">
+                </div>
+                <h3>Languages and Frameworks Used</h3>
+                <ul>
+                    <li>Thing 1</li>
+                    <li>Thing 2</li>
+                    <li>Thing 3</li>
+                </ul>
             </div>
-            <h3>Languages and Frameworks Used</h3>
-            <ul>
-                <li>Thing 1</li>
-                <li>Thing 2</li>
-                <li>Thing 3</li>
-            </ul>
-        </div>
-    </a>
+        </a>
 
-    <a href="#">
+        <a href="#">
 
-        <div id="project-2" class="link-box">
-            <div>
-                <img class="image-size" src="river.jpeg" alt="Picture of a River" style="border-radius: 5px;">
+            <div id="project-2" class="link-box">
+                <div>
+                    <img class="image-size" src="river.jpeg" alt="Picture of a River" style="border-radius: 5px;">
+                </div>
+                <h3>Languages and Frameworks Used</h3>
+                <ul>
+                    <li>Thing 1</li>
+                    <li>Thing 2</li>
+                    <li>Thing 3</li>
+                </ul>
             </div>
-            <h3>Languages and Frameworks Used</h3>
-            <ul>
-                <li>Thing 1</li>
-                <li>Thing 2</li>
-                <li>Thing 3</li>
-            </ul>
-        </div>
-    </a>
+        </a>
+        <a href="#">
+
+            <div id="project-2" class="link-box">
+                <div>
+                    <img class="image-size" src="river.jpeg" alt="Picture of a River" style="border-radius: 5px;">
+                </div>
+                <h3>Languages and Frameworks Used</h3>
+                <ul>
+                    <li>Thing 1</li>
+                    <li>Thing 2</li>
+                    <li>Thing 3</li>
+                </ul>
+            </div>
+        </a>
+    </div>
 </body>
 
 </html>
